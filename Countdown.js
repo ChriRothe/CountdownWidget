@@ -113,10 +113,6 @@ if (remainingDays === 1) {
 postfixText.font = Font.regularSystemFont(15)
 postfixText.textColor = new Color(textColor);
 
-//textStack.addSpacer()
-
-widget.addSpacer()
-
 let textStack2 = widget.addStack();
 textStack2.layoutHorizontally()
 textStack2.addSpacer()
