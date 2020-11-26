@@ -1,7 +1,7 @@
 // Variables used by Scriptable.
 // These must be at the very top of the file. Do not edit.
 // icon-color: orange; icon-glyph: hourglass-half;
-// Version 1.2.1
+// Based on another script which i didn't find again. Please let me know if you found out ...
 
 let dateForCountdown = ''
 let icon = ''
