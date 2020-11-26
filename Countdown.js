@@ -128,6 +128,11 @@ minutesText.font = Font.regularSystemFont(15)
 minutesText.textColor = new Color(textColor);
 minutesText.minimumScaleFactor = 0.5;
 
+let minutesText = textStack2.addText(`${remainingSeconds}` + ' m')
+secondsText.font = Font.regularSystemFont(15)
+secondsText.textColor = new Color(textColor);
+secondsText.minimumScaleFactor = 0.5;
+
 widget.addSpacer()
 
 //if(showDate) {
