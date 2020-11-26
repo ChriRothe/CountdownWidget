@@ -118,20 +118,9 @@ textStack2.layoutHorizontally()
 textStack2.addSpacer()
 textStack2.centerAlignContent()
 
-let hoursText = textStack2.addText(`${remainingHours}` + ' h ')
-hoursText.font = Font.regularSystemFont(15)
-hoursText.textColor = new Color(textColor);
-hoursText.minimumScaleFactor = 0.5;
-
-let minutesText = textStack2.addText(`${remainingMinutes}` + ' m')
-minutesText.font = Font.regularSystemFont(15)
-minutesText.textColor = new Color(textColor);
-minutesText.minimumScaleFactor = 0.5;
-
-let secondsText = textStack2.addText(`${remainingSeconds}` + ' s')
-secondsText.font = Font.regularSystemFont(15)
-secondsText.textColor = new Color(textColor);
-secondsText.minimumScaleFactor = 0.5;
+let timeText = textStack2.addText(`${remainingHours}` + ' h ' + `${remainingMinutes}` + ' m ' )
+timeText.textColor = new Color(textColor);
+timeText.minimumScaleFactor = 0.5;
 
 widget.addSpacer()
 
