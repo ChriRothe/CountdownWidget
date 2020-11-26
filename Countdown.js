@@ -117,12 +117,17 @@ postfixText.textColor = new Color(textColor);
 
 widget.addSpacer()
 
-let hoursText = textStack.addText(`${remainingHours}` + ' h ')
+let textStack2 = widget.addStack();
+textStack2.layoutHorizontally()
+textStack2.addSpacer()
+textStack2.centerAlignContent()
+
+let hoursText = textStack2.addText(`${remainingHours}` + ' h ')
 hoursText.font = Font.regularSystemFont(15)
 hoursText.textColor = new Color(textColor);
 hoursText.minimumScaleFactor = 0.5;
 
-let minutesText = textStack.addText(`${remainingMinutes}` + ' m')
+let minutesText = textStack2.addText(`${remainingMinutes}` + ' m')
 minutesText.font = Font.regularSystemFont(15)
 minutesText.textColor = new Color(textColor);
 minutesText.minimumScaleFactor = 0.5;
